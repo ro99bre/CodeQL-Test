@@ -4,6 +4,11 @@
   <groupId>gov.nist.sard.testcases</groupId>
   <artifactId>CWE-547_55586</artifactId>
   <version>1.0.0</version>
+  <parent>
+    <groupId>de.htwg.ba-rb.java-test-project</groupId>
+    <artifactId>2_Violation-of-best-Practices</artifactId>
+    <version>1.0</version>
+  </parent>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>

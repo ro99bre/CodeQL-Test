@@ -5,6 +5,11 @@
   <artifactId>CWE-327</artifactId>
   <packaging>pom</packaging>
   <version>1.0</version>
+  <parent>
+    <groupId>de.htwg.ba-rb.java-test-project</groupId>
+    <artifactId>1_Security</artifactId>
+    <version>1.0</version>
+  </parent>
   <modules>
     <module>CWE-327_135151-v1.0.0</module>
   </modules>
