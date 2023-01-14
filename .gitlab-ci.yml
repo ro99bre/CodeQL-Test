@@ -1,0 +1,8 @@
+image: maven:3.8.6-eclipse-temurin-8
+
+compile:
+  stage: build
+  tags:
+    - docker
+  script:
+    - mvn compile
