@@ -1,0 +1,115 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 55586,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "deprecated",
+        "submissionDate": "2011-04-08",
+        "language": "java",
+        "description": "CWE: 547 Use of Hardcoded Security Relevant Constants\n Sinks:\n GoodSink: using a constant\n BadSink : not using a constant\n Flow Variant: 01 Baseline",
+        "state": "mixed"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/main/java/testcases/CWE547_Hardcoded_Security_Constants/CWE547_Hardcoded_Security_Constants__basic_01.java"
+          },
+          "length": 4469,
+          "sourceLanguage": "java",
+          "hashes": {
+            "sha-256": "9be051ee96089d7147e66372a0ac2567f8807eace46786b1f91088e514dc9014"
+          }
+        },
+        {
+          "location": {
+            "uri": "src/main/java/testcasesupport/AbstractTestCase.java"
+          },
+          "length": 1903,
+          "sourceLanguage": "java",
+          "hashes": {
+            "sha-256": "8f6a1cb2ef57786dd2d3310dc1d16c4176b44756bd9be62033da8070fa977689"
+          }
+        },
+        {
+          "location": {
+            "uri": "src/main/java/testcasesupport/IO.java"
+          },
+          "length": 2654,
+          "sourceLanguage": "java",
+          "hashes": {
+            "sha-256": "ff5fbe9cf7612c0b7ee83cceacba60324626151be57dfe948f18c407834cd55d"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+            {
+              "id": "547",
+              "name": "Use of Hard-coded, Security-relevant Constants"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "CWE-547",
+          "message": {
+            "text": "Use of Hard-coded, Security-relevant Constants."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/main/java/testcases/CWE547_Hardcoded_Security_Constants/CWE547_Hardcoded_Security_Constants__basic_01.java",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 41
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "index": 0
+              },
+              "id": "547",
+              "index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
