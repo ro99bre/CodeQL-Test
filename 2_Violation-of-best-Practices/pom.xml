@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.htwg.ba-rb.java-test-project</groupId>
+  <artifactId>2_Violation-of-best-Practices</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0</version>
+  <modules>
+    <module>CWE-478_140100-v1.0.0</module>
+    <module>CWE-489_2098-v1.0.0</module>
+    <module>CWE-546_140627-v1.0.0</module>
+    <module>CWE-547_55586-v1.0.0</module>
+    <module>CWE-561_140661-v1.0.0</module>
+    <module>CWE-563_140862-v1.0.0</module>
+    <module>CWE-581_140971-v1.0.0</module>
+    <module>CWE-586_140992-v1.0.0</module>
+    <module>CWE-605_141377-v1.0.0</module>
+    <module>CWE-1071_137857-v1.0.0</module>
+    <module>CWE-1071_137874-v1.0.0</module>
+  </modules>
+</project>

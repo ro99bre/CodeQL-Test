@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.htwg.ba-rb.java-test-project.3_Likely-Bug</groupId>
+  <artifactId>CWE-438</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0</version>
+  <modules>
+    <module>CWE-483_140151-v1.0.0</module>
+    <module>CWE-483_140153-v1.0.0</module>
+    <!-- <module>CWE-484_71-v1.0.0</module> -->
+    <module>CWE-484_140170-v1.0.0</module>
+    <module>CWE-698_142720-v1.0.0</module>
+    <module>CWE-835_145803-v1.0.0</module>
+    <module>CWE-835_145806-v1.0.0</module>
+  </modules>
+</project>

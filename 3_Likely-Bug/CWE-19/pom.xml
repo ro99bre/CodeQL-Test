@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>de.htwg.ba-rb</groupId>
-  <artifactId>java-test-project</artifactId>
+  <groupId>de.htwg.ba-rb.java-test-project.3_Likely-Bug</groupId>
+  <artifactId>CWE-19</artifactId>
   <packaging>pom</packaging>
   <version>1.0</version>
   <modules>
-    <module>2_Violation-of-best-Practices</module>
-    <module>3_Likely-Bug</module>
+    <module>CWE-182_49538-v1.0.0</module>
+    <module>CWE-182_49602-v1.0.0</module>
+    <module>CWE-601_141266-v1.0.0</module>
+    <module>CWE-601_141340-v1.0.0</module>
   </modules>
 </project>
