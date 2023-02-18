@@ -1,0 +1,205 @@
+code_complexity_features:
+- feature: SOCKET
+  feature_group: source_taint
+  file_name: /tmp/tmpgk339Z_ss_testcase/src/core/src/java/org/apache/lucene/util/SPIClassIterator.java
+  function_name: isParentClassLoader
+  line_number: '0'
+- feature: simple
+  feature_group: data_type
+  file_name: /tmp/tmpgk339Z_ss_testcase/src/core/src/java/org/apache/lucene/util/SPIClassIterator.java
+  function_name: isParentClassLoader
+  line_number: '0'
+- feature: address_as_constant
+  feature_group: data_flow
+  file_name: /tmp/tmpgk339Z_ss_testcase/src/core/src/java/org/apache/lucene/util/SPIClassIterator.java
+  function_name: isParentClassLoader
+  line_number: '0'
+- feature: interprocedural_50
+  feature_group: control_flow
+  file_name: /tmp/tmpgk339Z_ss_testcase/src/core/src/java/org/apache/lucene/util/SPIClassIterator.java
+  function_name: isParentClassLoader
+  line_number: '0'
+description: "This test creates a connection to the PGSQL database,\n and creates\
+  \ a query string based on data in an environment\n variable. This data is not checked\
+  \ for special elements, however, and\n it is possible to construct a query string\
+  \ that performs unexpected\n data retrievals or modifications.\n"
+io_pair:
+  benigns:
+  - inputs:
+    - address: ss-localhost
+      id: source
+      ordinal: '1'
+      port: '8887'
+      source: socket_input
+      stage: co_process
+      value: shipper1
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '2'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: post_process
+      value: DROP DATABASE IF EXISTS $SS_DBPGDATABASE;
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '3'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: pre_process
+      value: northwindlower
+      value_encoding: none
+      value_type: USE_CONTENTS_OF_FILE
+    - name: SS_DBPGDATABASE
+      ordinal: '4'
+      source: env_var_input
+      stage: pre_process
+      value: SET_DYNAMIC_DB_NAME
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+  - inputs:
+    - address: ss-localhost
+      id: source
+      ordinal: '1'
+      port: '8887'
+      source: socket_input
+      stage: co_process
+      value: NewShipper
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '2'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: post_process
+      value: DROP DATABASE IF EXISTS $SS_DBPGDATABASE;
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '3'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: pre_process
+      value: northwindlower
+      value_encoding: none
+      value_type: USE_CONTENTS_OF_FILE
+    - name: SS_DBPGDATABASE
+      ordinal: '4'
+      source: env_var_input
+      stage: pre_process
+      value: SET_DYNAMIC_DB_NAME
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+  - inputs:
+    - address: ss-localhost
+      id: source
+      ordinal: '1'
+      port: '8887'
+      source: socket_input
+      stage: co_process
+      value: ShippingCompany
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '2'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: post_process
+      value: DROP DATABASE IF EXISTS $SS_DBPGDATABASE;
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '3'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: pre_process
+      value: northwindlower
+      value_encoding: none
+      value_type: USE_CONTENTS_OF_FILE
+    - name: SS_DBPGDATABASE
+      ordinal: '4'
+      source: env_var_input
+      stage: pre_process
+      value: SET_DYNAMIC_DB_NAME
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+  description: 'Environment variable defining test value.
+
+    '
+  exploits:
+  - inputs:
+    - address: ss-localhost
+      id: source
+      ordinal: '1'
+      port: '8887'
+      source: socket_input
+      stage: co_process
+      value: BadShipper'), ('80', 'BadShipper2
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '2'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: post_process
+      value: DROP DATABASE IF EXISTS $SS_DBPGDATABASE;
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '3'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: pre_process
+      value: northwindlower
+      value_encoding: none
+      value_type: USE_CONTENTS_OF_FILE
+    - name: SS_DBPGDATABASE
+      ordinal: '4'
+      source: env_var_input
+      stage: pre_process
+      value: SET_DYNAMIC_DB_NAME
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+  - inputs:
+    - address: ss-localhost
+      id: source
+      ordinal: '1'
+      port: '8887'
+      source: socket_input
+      stage: co_process
+      value: ShippersRUs'), ('55', 'BadShips'), ('65', 'ShipAttack'), ('45', 'MultiShip
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '2'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: post_process
+      value: DROP DATABASE IF EXISTS $SS_DBPGDATABASE;
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+    - database: postgresql
+      ordinal: '3'
+      server: ss-db-postgres
+      source: database_content_input
+      stage: pre_process
+      value: northwindlower
+      value_encoding: none
+      value_type: USE_CONTENTS_OF_FILE
+    - name: SS_DBPGDATABASE
+      ordinal: '4'
+      source: env_var_input
+      stage: pre_process
+      value: SET_DYNAMIC_DB_NAME
+      value_encoding: none
+      value_type: USE_TEXT_DIRECTLY
+weakness_points:
+- entry_point_type: TRIGGER_POINT
+  file_name: /tmp/tmpgk339Z_ss_testcase/src/core/src/java/org/apache/lucene/util/SPIClassIterator.java
+  function_name: haughtyUpwreathe
+  line_number: '0'
+- entry_point_type: CROSSOVER_POINT
+  file_name: /tmp/tmpgk339Z_ss_testcase/src/core/src/java/org/apache/lucene/util/SPIClassIterator.java
+  function_name: haughtyUpwreathe
+  line_number: '0'
