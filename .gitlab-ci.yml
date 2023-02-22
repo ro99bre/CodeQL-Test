@@ -12,6 +12,7 @@ analyze:
   tags:
     - docker
   script:
+    - mkdir data
     - codeql database create --language=java data/java-database
     - codeql database analyze data/java-database --format=csv --output=test.csv codeql/java-queries
 
